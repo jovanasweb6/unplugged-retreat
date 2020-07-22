@@ -375,23 +375,13 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-.contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.contact-content p {
-  margin: 0;
+  background-color: #527158;
 }
 
 .map figure {
   width: 100%;
   height: 0;
-  padding-bottom: 125%;
+  padding-bottom: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -404,6 +394,17 @@ input[type=button] {
   left: 0;
 }
 
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #2a423a;
+}
+
+.contact-content p {
+  margin: 0;
+}
 
 
 
@@ -416,6 +417,7 @@ FAQ PAGE
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -423,20 +425,23 @@ FAQ PAGE
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 20px 0;
 }
 
-
-
-
-/* ----------------- Footer ---------------- */
-
-/*footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+.faq h2 {
+  font-size: 2em;
+  line-height: 1.5;
+  margin-bottom: 25px;
 }
-*/
+
+.faq h4 {
+  font-size: 1.25em;
+}
+
+.faq-content {
+  margin-bottom: 30px;
+  line-height: 0.90;
+}
 
 
 
@@ -525,6 +530,15 @@ FAQ PAGE
   clear: both;
 }
 
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -554,11 +568,6 @@ FAQ PAGE
     line-height: 1.25;
     font-size: 1.5em;
   }
-
-  /*h3, h4 {
-    font-size: 1.875em;
-
-  }*/
 
 
   /*HEADER*/
@@ -670,7 +679,7 @@ FAQ PAGE
   .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
     flex-direction: row;
   }
 
@@ -696,7 +705,69 @@ FAQ PAGE
     width: 100%;
   }
 
+
+/* =============================================
+                  ABOUT PAGE 
+============================================= */
+  .mission-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .map figure {
+    padding-bottom: 65.5%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
+
+/* =============================================
+                    FAQ  PAGE 
+============================================= */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
 }
+
+
+
+
+
+
+
 
 
  /* ----------- Desktop Styles Here 1200px ------------
@@ -778,27 +849,47 @@ FAQ PAGE
 /* =============================================
                   ABOUT PAGE 
 ============================================= */
+.map figure {
+  padding-bottom: 40%;
+}
+
+footer .content-wrapper {
+  margin-top: 10px 0;
+}
 
 .mission h2,
 .contact-section .content-wrapper h2 {
-  width:;
+  width: 95%;
+  font-size: 3em;
+}
+
+.contact-content h4 {
+  font-size: 1.875em;
 }
 
 /* =============================================
                   FAQ PAGE 
 ============================================= */
 
-.faq h2 {
-  width: 100%;
+  .faq h2 {
+    width: 100%;
+    font-size: 3em;
+  }
+    
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
+
+  .faq .content-wrapper {
+    width: 90%;
+  }
+
+  .content-wrapper {
+    max-width: 960px;
+  }
 }
-
-
-
-
-
-
-
-
 
 
 
